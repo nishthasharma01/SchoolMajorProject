@@ -28,7 +28,7 @@ public class Test_3_This_Course_tab {
 		access.type_passwordfunc("Autotest@01");
 		Utility.captureScreenshots(driver, "password");
 		access.click_signIn_func();	
-		access.univ_course_func();
+		access.lib_course_func();
 		
 		driver.quit();
 
@@ -37,3 +37,4 @@ public class Test_3_This_Course_tab {
 
 	
 }
+
