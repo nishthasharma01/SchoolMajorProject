@@ -30,16 +30,20 @@ public class Test_2_All_tabs {
 		access.type_passwordfunc("Autotest@01");
 		Utility.captureScreenshots(driver, "password");
 		access.click_signIn_func();	
-		access.home_tab_func();
-		Utility.captureScreenshots(driver, "Home_tab");
-		access.dashboard_tab_func();;
+		access.profile_tab_func();
+		Utility.captureScreenshots(driver, "profile_tab");
+		access.my_courseBtn_func();
+		access.dashboard_tab_func();
 		Utility.captureScreenshots(driver, "Dashboard_tab");
-		access.previousCourse_tab_func();;
-		Utility.captureScreenshots(driver, "PreviousCourse_tab");
-		access.community_tab_func();;
-		Utility.captureScreenshots(driver, "Community_tab");
+		access.my_courseBtn_func();
+		access.prefrence_tab_func();
+		Utility.captureScreenshots(driver, "Preference_tab");
+		access.my_courseBtn_func();
+		access.grades_tab_func();
+		Utility.captureScreenshots(driver, "grades_tab");
+		access.my_courseBtn_func();
 		js.executeScript("window.scrollBy(0,1000)");
-		
+		access.logout_func();
 		
 		driver.quit();
 
@@ -48,3 +52,4 @@ public class Test_2_All_tabs {
 
 	
 }
+
