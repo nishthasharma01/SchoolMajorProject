@@ -23,9 +23,9 @@ public class Test_3_This_Course_tab {
 		Thread.sleep(2000);
 		Utility.captureScreenshots(driver, "Cougar Course");
 		
-		access.type_usernamefunc("sharm014");
+		access.type_usernamefunc("myUsername");
 		Utility.captureScreenshots(driver, "username");
-		access.type_passwordfunc("Autotest@01");
+		access.type_passwordfunc("myPassword");
 		Utility.captureScreenshots(driver, "password");
 		access.click_signIn_func();	
 		access.lib_course_func();
