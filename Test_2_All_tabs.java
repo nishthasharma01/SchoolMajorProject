@@ -25,9 +25,9 @@ public class Test_2_All_tabs {
 		Thread.sleep(2000);
 		Utility.captureScreenshots(driver, "Cougar Course");
 		
-		access.type_usernamefunc("sharm014");
+		access.type_usernamefunc("myUsername");
 		Utility.captureScreenshots(driver, "username");
-		access.type_passwordfunc("Autotest@01");
+		access.type_passwordfunc("myPassword");
 		Utility.captureScreenshots(driver, "password");
 		access.click_signIn_func();	
 		access.profile_tab_func();
