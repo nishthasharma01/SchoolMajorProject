@@ -15,7 +15,7 @@ public class Browser_class {
 	
 		if(browser_name.equalsIgnoreCase("chrome"))
 		{
-			String exePath = "C:\\Users\\NISHTHA\\Downloads\\chromedriver.exe";
+			String exePath = "C:\\yourPath\\Downloads\\chromedriver.exe";
 			System.setProperty("webdriver.chrome.driver", exePath);
 			driver = new ChromeDriver();
 		}
