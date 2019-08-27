@@ -31,9 +31,9 @@ public class Test_1_Login {
 
 		login.generalFunc();
 		Utility.captureScreenshots(driver, "Cougar Course");
-		login.type_usernamefunc("sharm014");
+		login.type_usernamefunc("myUsername");
 		Utility.captureScreenshots(driver, "username");
-		login.type_passwordfunc("Autotest@0");
+		login.type_passwordfunc("MyPassword");
 		Utility.captureScreenshots(driver, "password");
 		login.click_signIn_func();
 		//Assert.assertEquals(login.invalid_creds_func(), "Incorrect user ID or password. Type the correct user ID and password, and try again.");
