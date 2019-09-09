@@ -26,18 +26,21 @@ public class Test_1_Login {
 		//Browser_class browser = new Browser_class();
 		
 		
-		WebDriver driver =  Browser_class.start_browser_func("chrome","https://www.csusm.edu/");
+		WebDriver driver =  Browser_class.start_browser_func("chrome","your Website url");
 		App_elements login = new App_elements(driver);
 
+		//Login into application
 		login.generalFunc();
 		Utility.captureScreenshots(driver, "Cougar Course");
 		login.type_usernamefunc("myUsername");
 		Utility.captureScreenshots(driver, "username");
-		login.type_passwordfunc("MyPassword");
+		login.type_passwordfunc("myPassword");
 		Utility.captureScreenshots(driver, "password");
 		login.click_signIn_func();
+		String page_title = driver.getTitle();
+		System.out.println(page_title);
 		//Assert.assertEquals(login.invalid_creds_func(), "Incorrect user ID or password. Type the correct user ID and password, and try again.");
-		login.invalid_creds_func();
+		//login.invalid_creds_func();
 //		login.click_course_func();
 //		Utility.captureScreenshots(driver, "homepage");
 //		login.logout_func();
