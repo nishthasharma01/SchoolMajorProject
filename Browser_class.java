@@ -15,14 +15,18 @@ public class Browser_class {
 	
 		if(browser_name.equalsIgnoreCase("chrome"))
 		{
-			String exePath = "C:\\yourPath\\Downloads\\chromedriver.exe";
+			String exePath = "C:\\Installed programs selenium groovy\\chromedriver.exe";
 			System.setProperty("webdriver.chrome.driver", exePath);
 			driver = new ChromeDriver();
 		}
 		
 		else if(browser_name.equalsIgnoreCase("firefox"))
 		{
+			
+			String exePath = "C:\\Installed programs selenium groovy\\geckodriver.exe";
+			System.setProperty("webdriver.gecko.driver", exePath);
 			driver = new FirefoxDriver();
+			
 		}
 		
 		else if(browser_name.equalsIgnoreCase("IE"))
