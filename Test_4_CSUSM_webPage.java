@@ -19,7 +19,7 @@ public class Test_4_CSUSM_webPage {
 		//Browser_class browser = new Browser_class();
 		
 		
-		WebDriver driver =  Browser_class.start_browser_func("chrome","https://www.csusm.edu/");
+		WebDriver driver =  Browser_class.start_browser_func("chrome","your websit url");
 		App_elements verify = new App_elements(driver);
 		
 		WebElement webpage_heading= driver.findElement(By.xpath("//*[@id='ga-hp-header-home']"));
