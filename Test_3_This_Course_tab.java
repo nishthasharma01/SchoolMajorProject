@@ -17,7 +17,8 @@ public class Test_3_This_Course_tab {
 		WebDriver driver =  Browser_class.start_browser_func("chrome","https://www.csusm.edu/");
 		App_elements access = new App_elements(driver);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-
+		
+		//Login into application
 		access.generalFunc();
 		js.executeScript("window.scrollBy(0,1000)");
 		Thread.sleep(2000);
